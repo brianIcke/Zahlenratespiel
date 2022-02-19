@@ -5,7 +5,7 @@ Start:
 Zahlenratespiel.start();
 System.Console.WriteLine("Möchtest du nochmal spielen?[j/N]");
 
-while (System.Console.ReadKey().Key == System.ConsoleKey.J) goto Start;
+if (System.Console.ReadKey().Key == System.ConsoleKey.J) goto Start;
 System.Console.WriteLine("Okay, danke fürs spielen und bis zum nächsten Mal!");
 Thread.Sleep(1000);
 Environment.Exit(0);
